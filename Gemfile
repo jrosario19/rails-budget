@@ -46,7 +46,7 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'bootsnap', require: false
 
 # Use Sass to process CSS
-gem "sassc-rails"
+gem 'sassc-rails'
 gem 'sass-rails'
 
 gem 'font-awesome-sass'
@@ -76,7 +76,7 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
+  gem 'database_cleaner-active_record'
   gem 'selenium-webdriver'
   gem 'webdrivers'
-  gem 'database_cleaner-active_record'
 end
