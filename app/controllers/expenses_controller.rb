@@ -3,7 +3,7 @@ class ExpensesController < ApplicationController
     before_action :set_category, only: %i[index new create]
   
     def index
-      @expenses = @category.category_expenses.order(created_at: :desc)
+      @expenses = @category.category_expenses.includes([:expense]).order(created_at: :desc)
     end
   
     def new
